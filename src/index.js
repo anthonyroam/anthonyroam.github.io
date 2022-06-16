@@ -1,16 +1,18 @@
 const menuIcon = document.querySelector(".header__menu");
 const menu = document.querySelector(".menu");
-const projectDescription = document.querySelector(".project__container");
-const pusher = document.querySelector(".pusher");
+const project = document.querySelectorAll(".project__container");
+const projectArray = [...project];
+const projectPusher = document.querySelectorAll(".pusher");
+const projectPusherArray = [...projectPusher]
 
 menuIcon.addEventListener( "click", (e) => {
     menu.classList.toggle("show")
 });
 
-projectDescription.addEventListener( "mouseenter", (e) => {
-    pusher.classList.add("push")
-});
+projectArray.map((project, index) => {
+    project.addEventListener("mouseenter", () => projectPusherArray[index].classList.add("push"));
+})
 
-projectDescription.addEventListener( "mouseleave", (e) => {
-    pusher.classList.remove("push")
-});
+projectArray.map((project, index) => {
+    project.addEventListener("mouseleave", () => projectPusherArray[index].classList.remove("push"));
+})

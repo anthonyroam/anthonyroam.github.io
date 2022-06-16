@@ -27,7 +27,7 @@
             <a href="#" class="menu__link">Contact</a>
         </li>
         <li class="menu__item">
-            <a href="#" class="menu__link">Contact</a>
+            <a href="#" class="menu__link">Light mode</a>
         </li>
     </ul>
     <!-- HEADER -->
@@ -78,19 +78,101 @@
             <p class="title__underline"></p>
         </div>
         <div class="project__wrapper">
-                <div class="project__container">
-                    <div class="pusher"></div>
-                    <div class="project__description">
-                        <p>"A tip calculator made with HTML, CSS and JavaScript"</p>
-                        <div class="links">
-                            <a class="link" href="https://anthonyroam.github.io/tipCalculator" target="_blank">visit</a>
-                            <a class="link" href="https://github.com/anthonyroam/tipCalculator" target="_blank">Repository</a>
-                        </div>
+            <div class="project__container" style='background-image: url("src/assets/images/tip-calculator.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"A tip calculator made with HTML, CSS and JavaScript"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/tipCalculator" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/tipCalculator" target="_blank">Repository</a>
                     </div>
-                    <!-- <img src="/src/assets/images/tip-calculator.png" alt="" class="project__img"> -->
+                </div>    
+            </div>
+            <div class="project__container" style='background-image: url("src/assets/images/react-sign-up-form.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"A sign up form with basic validations made with React.js and tailwindscss"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/react-sign-up-form" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/react-sign-up-form" target="_blank">Repository</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="project__container" style='background-image: url("src/assets/images/to-do-machine.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"An interactive to do App with local storage made with React.js and tailwindcss"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/to-do-machine" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/to-do-machine" target="_blank">Repository</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="project__container" style='background-image: url("src/assets/images/time-tracking-dashboard.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"A time tracking dashboard that takes data from a JSON file made with React.js and tailwindcss"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/time-tracking-dashboard" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/time-tracking-dashboard" target="_blank">Repository</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="project__container" style='background-image: url("src/assets/images/calculator.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"A basic calculator made with HTML, CSS and JavaScript"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/calculator" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/calculator" target="_blank">Repository</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="project__container" style='background-image: url("src/assets/images/faq.png");' >
+                <div class="pusher"></div>
+                <div class="project__description">
+                    <p>"A frequently asked questions section made with HTML, CSS and JavaScript"</p>
+                    <div class="links">
+                        <a class="link" href="https://anthonyroam.github.io/FAQ" target="_blank">visit</a>
+                        <a class="link" href="https://github.com/anthonyroam/FAQ" target="_blank">Repository</a>
+                    </div>
+                </div>    
             </div>
         </div>
     </section>
+    <!-- CONTACT -->
+    <section class="contact">
+        <div class="title__container">
+            <h1 class="title">Contact me</h1>
+            <div class="title__underline"></div>
+        </div>
+        <form class="form" action="https://formspree.io/f/mjvlzqdw" method="POST">
+            <div class="input__container"> 
+                <label for="name" class="form__label">Name:</label>
+                <input type="text" placeholder="Name" class="form__input" name="name">
+            </div>
+            <div class="input__container"> 
+                <label for="email" class="form__label">Email:</label>
+                <input type="email" placeholder="Email" class="form__input" name="email">
+            </div>
+            <div class="input__container"> 
+                <label class="form__label">Message:</label>
+                <textarea placeholder="Message" class="form__input form__input--message" rows="4" name="message" ></textarea>
+            </div>
+            <button type="submit" class="button" >Send</button>
+        </form>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <h3 class="footer__text">Follow me</h3>
+            <div class="footer__icons">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
     <script src="src/index.js"></script>
 </body>
 </html>
