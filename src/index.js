@@ -1,16 +1,31 @@
 const menuIcon = document.querySelector(".header__menu");
 const menu = document.querySelector(".menu");
+
 const project = document.querySelectorAll(".project__container");
 const projectArray = [...project];
+
 const projectPusher = document.querySelectorAll(".pusher");
 const projectPusherArray = [...projectPusher]
+
 const themeButton = document.querySelectorAll(".themeButton");
 const themeButtonArray = [...themeButton];
+
 const skillset = document.getElementById("skillset");
 
 menuIcon.addEventListener( "click", (e) => {
-    menu.classList.toggle("show")
+    menu.classList.toggle("show");
+
+    document.body.addEventListener("click", handleClickOut)    
 });
+
+function handleClickOut(e) {
+    clickedElement = e.target;
+
+    if (clickedElement !== menu && clickedElement.className !== "fa-solid fa-bars" && !clickedElement.classList.contains("menu__link")) {
+        menu.classList.remove("show");
+        document.body.removeEventListener("click", handleClickOut)
+    } 
+}
 
 projectArray.map((project, index) => {
     project.addEventListener("mouseenter", () => projectPusherArray[index].classList.add("push"));
