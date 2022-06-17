@@ -12,47 +12,67 @@
     <title>Anthony Roa</title>
 </head>
 <body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h2 class="header__logo"><<span class="header__logo__name">Anthony</span><span class="header__logo__lastname">Roa</span>/></h2>
+        <div class="header__menu"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav__menu">
+            <li class="menu__item menu__item--nav">
+                <a href="#profile" class="menu__link">About me</a>
+            </li>
+            <li class="menu__item menu__item--nav">
+                <a href="#" class="menu__link">Resume</a>
+            </li>
+            <li class="menu__item menu__item--nav">
+                <a href="#portfolio" class="menu__link">Portfolio</a>
+            </li>
+            <li class="menu__item menu__item--nav">
+                <a href="#contact" class="menu__link">Contact</a>
+            </li>
+            <li class="menu__item menu__item--nav">
+                <a href="#" class="menu__link themeButton">Light mode</a>
+            </li>
+        </div>
+    </header>
     <!-- MENU -->
     <ul class="menu">
         <li class="menu__item">
-            <a href="#" class="menu__link">About me</a>
+            <a href="#profile" class="menu__link">About me</a>
         </li>
         <li class="menu__item">
             <a href="#" class="menu__link">Resume</a>
         </li>
         <li class="menu__item">
-            <a href="#" class="menu__link">Portfolio</a>
+            <a href="#portfolio" class="menu__link">Portfolio</a>
         </li>
         <li class="menu__item">
-            <a href="#" class="menu__link">Contact</a>
+            <a href="#contact" class="menu__link">Contact</a>
         </li>
         <li class="menu__item">
-            <a href="#" class="menu__link">Light mode</a>
+            <a href="#" class="menu__link themeButton">Light mode</a>
         </li>
     </ul>
-    <!-- HEADER -->
-    <header class="header">
-        <h2 class="header__logo"><<span class="header__logo__name">Anthony</span><span class="header__logo__lastname">Roa</span>/></h2>
-        <div class="header__menu"><i class="fa-solid fa-bars"></i></div>
-    </header>
     <!-- PROFILE -->
-    <section class="profile">
-        <div class="img__wrapper"><div class="profile__img"></div></div>
+    <section class="container container--profile" id="profile">
+        <div class="profile__wrapper"><div class="profile__img"></div></div>
         <div class="profile__role">Frontend-developer</div>
         <h1 class="profile__name"><span>Hello, I am</span> Anthony Roa</h1>
         <p class="profile__description">I am an Accountant who recently found that his true passion is software development, and since then I started working hard to become a Front-end developer, I am a lover of new technologies,
             excited about my work. I like challenges and I am happy to be able to contribute my knowledge to materialize the ideas of the clients.
         </p>
-        <button class="button buttons">Resume</button>
-        <button class="button buttons">Contact</button>
+        <div class="button__container">
+            <a class="button">Resume</a>
+            <a href="#contact" class="button">Contact</a>
+        </div>
     </section>
     <!-- SKILLSET -->
-    <section class="skillset">
+    <section class="container">
         <div class="title__container">
             <h1 class="title">Skillset</h1>
             <div class="title__underline"></div>
         </div>
-        <div class="icon__wrapper">
+        <div class="icon__wrapper"  id="skillset">
             <div class="icon__container">
                 <i class="fa-brands fa-html5"></i>
                 <p class="icon__name">HTML</p>
@@ -69,10 +89,18 @@
                 <i class="fa-brands fa-react"></i>
                 <p class="icon__name">React.js</p>
             </div>
+            <div class="icon__container">
+                <i class="fa-brands fa-npm"></i>
+                <p class="icon__name">NPM</p>
+            </div>
+            <div class="icon__container">
+                <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 73.29"><defs></defs><title>tailwind-css</title><path class="custom__icon" d="M61.44,0Q36.87,0,30.72,24.43q9.22-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.26,6,6.08,13,13.11,28.22,13.11q24.57,0,30.72-24.43-9.21,12.22-21.5,9.16c-4.68-1.16-8-4.53-11.72-8.26C83.64,7,76.67,0,61.44,0ZM30.72,36.64Q6.15,36.64,0,61.07q9.23-12.21,21.5-9.16c4.68,1.16,8,4.53,11.72,8.27,6,6.07,13,13.11,28.22,13.11q24.57,0,30.72-24.43Q82.95,61.07,70.66,58c-4.68-1.16-8-4.53-11.72-8.26-6-6.08-13-13.12-28.22-13.12Z"/></svg>
+                <p class="icon__name">Tailwind</p>
+            </div>
         </div>
     </section>
     <!-- PORTFOLIO -->
-    <section class="portfolio">
+    <section class="container container--portfolio" id="portfolio">
         <div class="title__container">
             <h1 class="title">Portfolio</h1>
             <p class="title__underline"></p>
@@ -141,7 +169,7 @@
         </div>
     </section>
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="container" id="contact">
         <div class="title__container">
             <h1 class="title">Contact me</h1>
             <div class="title__underline"></div>
@@ -164,12 +192,12 @@
     </section>
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer__container">
+        <div class="container container--footer">
             <h3 class="footer__text">Follow me</h3>
             <div class="footer__icons">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.linkedin.com/in/anthony-roa-bb3206242" target="_blank"><i class="fa-brands fa-linkedin footer__icon"></i></a>
+                <a href="https://github.com/anthonyroam" target="_blank"><i class="fa-brands fa-github footer__icon"></i></a>
+                <a href="https://www.instagram.com/anthonyroam" target="_blank"><i class="fa-brands fa-instagram footer__icon"></i></a>
             </div>
         </div>
     </footer>
