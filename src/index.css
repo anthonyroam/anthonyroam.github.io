@@ -75,7 +75,6 @@ body {
 /* MENU */
 
 .menu {
-    visibility: visible;
     position: fixed;
     z-index: 1;
     top: -250px;
@@ -92,7 +91,6 @@ body {
 }
 
 .show {
-    visibility: visible;
     top: 3.5rem;
     right: 0;
     transition: all 0.4s ease-out;
@@ -265,6 +263,11 @@ body {
     fill-rule: evenodd;
 }
 
+.icon_size {
+    height: 50px;
+    width: auto;
+}
+
 /* PORTFOLIO */
 
 .project__wrapper {
@@ -273,6 +276,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 80%;
     margin: 0 auto;
     padding: 2rem;
 }
