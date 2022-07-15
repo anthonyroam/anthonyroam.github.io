@@ -266,6 +266,7 @@ body {
 .icon_size {
     height: 50px;
     width: auto;
+    scale: 1/1;
 }
 
 /* PORTFOLIO */

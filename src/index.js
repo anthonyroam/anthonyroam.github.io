@@ -19,9 +19,8 @@ menuIcon.addEventListener( "click", (e) => {
 });
 
 function handleClickOut(e) {
-    clickedElement = e.target;
-
-    if (clickedElement !== menu && clickedElement.className !== "fa-solid fa-bars" && !clickedElement.classList.contains("menu__link")) {
+    
+    if (!menuIcon.contains(e.target) && !menu.contains(e.target)) {
         menu.classList.remove("show");
         document.body.removeEventListener("click", handleClickOut)
     } 
